@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/product.js" defer></script>
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="header_wrap">
+                <a href="#" class="header_logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li>
+                            <a href="#">Main</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#" class="contact_media">Contacts</a>
+                            <div class="contact">
+                                <strong>+544 3490 00000</strong>
+                                <span>Звони скорее!</span>
+                            </div> 
+                        </li>
+                    </ul>
+                </nav>
+            </section>   
+            <div class="product_found">
+                <h1>Найдено 349 котов</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="product_found_main">
+                <div class="prod_found_main">
+                    <h1>Найдено 349 котов</h1>
+                </div>
+            </div>
+            <section class="sort">
+                <strong>Сортировать по:</strong>
+                <div class="sort__filter">
+                    <details>
+                        <summary>
+                            <span>Цене</span>
+                            <img src="img/sort-vector.svg" alt="#">
+                        </summary>
+                        <form action="#">
+                            <label class="custom-radio" for="min_to_max">
+                                <input id="min_to_max" type="radio" name="toogle">
+                                <span>От меньшего к большему</span>
+                            </label>
+                            <label class="custom-radio" for="max_to_min">
+                                <input id="max_to_min" type="radio" name="toogle">
+                                <span>От большего к меньшему</span> 
+                            </label>
+                        </form>    
+                    </details>
+                </div>
+                <div class="sort__filter">
+                    <details>
+                        <summary>
+                            <span>Возрасту</span>
+                            <img src="img/sort-vector.svg" alt="#">
+                        </summary>
+                        <form action="#">
+                            <label class="custom-radio" for="mi_to_ma">
+                                <input id="mi_to_ma" type="radio" name="toogle_2">
+                                <span>От меньшего к большему</span>
+                            </label>
+                            <label class="custom-radio" for="ma_to_mi">
+                                <input id="ma_to_mi" type="radio" name="toogle_2">
+                                <span>От большего к меньшему</span> 
+                            </label>
+                        </form>    
+                    </details>
+                </div>
+            </section>
+            <section class="catalog"></section>
+            <div class="show__prod__wrap">
+                <button id="show__product">Показать еще 20</button>
+            </div>
+            <div class="help__to__scroll">
+                <a class="back_to_top" title="Наверх"><img src="img/scroll.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <section class="footer__wrap">
+                <div class="side__left">
+                    <h2>Успей купить!</h2>
+                    <p>Подпишись и успей словить все акции</p>
+                </div>
+                <div class="side__right">
+                    <form>
+                        <div class="subscribe__mail">
+                            <input class="email__input" type="email" required placeholder="Email">
+                            <button class="subscribe">Подписаться</button>
+                        </div>
+                        <div class="subscribe__news">
+                            <input type="checkbox" class="custom-checkbox" id="subscribe__check" >
+                            <label for="subscribe__check">Подписаться на новости</label>
+                        </div>   
+                    </form>
+
+                </div>
+            </section>
+        </div> 
+    </footer>
+    
+</body>
+</html>
